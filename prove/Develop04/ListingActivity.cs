@@ -20,7 +20,7 @@ public class ListingActivity : Activity
     {
         DisplayStartingMessage();
         // List as many items as you can based on the following prompt
-        Console.WriteLine("List as many responses you can to the following prompt:");
+        Console.WriteLine("List as many responses you can to the following prompt:\n");
         // display random prompt
         Console.WriteLine(GetRandomPrompt());
         DateTime end = DateTime.Now.AddSeconds(_duration);

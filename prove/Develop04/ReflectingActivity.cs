@@ -32,11 +32,11 @@ public class ReflectingActivity : Activity
     public void Run()
     {
         DisplayStartingMessage();
-        Console.WriteLine("Consider the following prompt:");
+        Console.WriteLine("Consider the following prompt:\n");
         // Display the prompt
         Console.WriteLine(GetRandomPrompt());
         // ask user to hit enter to continue
-        Console.WriteLine("When you have something in mind, press enter to continue.");
+        Console.WriteLine("\nWhen you have something in mind, press enter to continue.");
         string userInput = Console.ReadLine();
         DateTime end = DateTime.Now.AddSeconds(_duration);
         while (DateTime.Now < end)
