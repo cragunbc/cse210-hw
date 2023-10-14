@@ -1,6 +1,6 @@
 public class CheckListGoal : Goal
 {
-    private int _amountcompleted;
+    private int _amountCompleted;
     private int _target;
     private int _bonus;
 
@@ -13,10 +13,10 @@ public class CheckListGoal : Goal
 
     }
 
-    public CheckListGoal(string _name, string _description, int _points, bool _isComplete, int _amountcompleted, int _target, int _bonus) : base(_name, _description, _points, _isComplete)
+    public CheckListGoal(string _name, string _description, int _points, bool _isComplete, int _amountCompleted, int _target, int _bonus) : base(_name, _description, _points, _isComplete)
     {
         //Initialize values
-        this._amountcompleted = _amountcompleted;
+        this._amountCompleted = _amountCompleted;
         this._target = _target;
         this._bonus = _bonus;
     }
@@ -35,8 +35,8 @@ public class CheckListGoal : Goal
         //_amountcompleted = 0;
         Console.Write("How many times have you completed the goal? ");
         int times = int.Parse(Console.ReadLine());
-        _amountcompleted += times;
-        if (_amountcompleted >= _target)
+        _amountCompleted += times;
+        if (_amountCompleted >= _target)
         {
             _isComplete = true;
             Console.Clear();
@@ -58,11 +58,11 @@ public class CheckListGoal : Goal
             _ = 'X';
         else
             _ = ' ';
-        return $"[{_}] {_name} ({_description}) {_amountcompleted}/{_target}";
+        return $"[{_}] {_name} ({_description}) {_amountCompleted}/{_target}";
     }
 
     public override string GetSaveString()
     {
-        return $"Checklist|{_name}|{_description}|{_points}|{_isComplete}|{_amountcompleted}|{_target}|{_bonus}";
+        return $"Checklist|{_name}|{_description}|{_points}|{_isComplete}|{_amountCompleted}|{_target}|{_bonus}";
     }
 }
