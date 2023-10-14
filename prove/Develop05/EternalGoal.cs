@@ -4,7 +4,8 @@ public class EternalGoal : Goal
 
     public override int RecordEvent()
     {
-        Console.WriteLine($"Good job! You completed the goal and earned {_points} points!");
+        Console.Clear();
+        Console.WriteLine($"\nGood job! You completed the goal and earned {_points} points!");
         return _points;
     }
 

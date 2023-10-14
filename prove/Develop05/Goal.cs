@@ -7,6 +7,7 @@ public abstract class Goal
     protected string _description;
     protected int _points;
     protected bool _isComplete;
+    public bool IsComplete {get{return _isComplete;}}
 
     public Goal(string _name, string _description, int _points)
     {

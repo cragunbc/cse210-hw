@@ -60,7 +60,7 @@ class Program
                 default:
                     Console.WriteLine("Select a valid option");
                     break;
-        }
+            }
 
         }
     }
