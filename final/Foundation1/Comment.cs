@@ -8,6 +8,6 @@ public class Comment
 
     public void Display()
     {
-        Console.WriteLine($"Name: {_person}, Comment: {_text}");
+        Console.WriteLine($"Name: {_person}\nComment: {_text}\n");
     }
 }
